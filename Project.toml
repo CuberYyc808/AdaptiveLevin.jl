@@ -1,7 +1,7 @@
 name = "AdaptiveLevin"
 uuid = "cb2033fd-04a4-45e1-a176-a3c784c945f7"
 authors = ["Yucheng Yin <cuber.ycyin@gmail.com>"]
-version = "0.1.0"
+version = "0.1.1"
 
 [deps]
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
