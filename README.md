@@ -82,7 +82,7 @@ prob = IntegralProblem(f, domain)
 ```
 The results and time are
 ```
-0.04087258215148527 + 0.03989088975628127im, 9.716638 seconds # Gauss–Kronrod
+0.04087258215148527 + 0.03989088975628127im, 9.716638 seconds # HCubature
 0.04087258215149002 + 0.03989088975628428im, 0.142308 seconds # adaptive-Levin
 ```
 If the phase function is separable, namely g(x,y) = gx(x) + gy(y), we also accept input as g = \[gx, gy\]:
