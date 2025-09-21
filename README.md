@@ -76,7 +76,7 @@ domain = ([-1.0, -1.0], [1.0, 1.0])
 prob = IntegralProblem(f, domain)
 @time val_ref = solve(prob, HCubatureJL(); reltol = 1e-8).u
 ```
-2D adaptibe Levin method:
+2D adaptive Levin method:
 ```julia
 @time val_levin = adaptive_levin_2d(fxy, gxy, [-1.0, 1.0], [-1.0, 1.0]; tol=1e-8, k=16)
 ```
