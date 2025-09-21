@@ -9,7 +9,7 @@ Supports **1D** and **2D oscillatory integrals**, with both fixed and adaptive a
 
 - Efficient evaluation of integrals of the form
   
-  I = \int f(x) e^{i g(x)} dx
+  I = \int f(x) exp\[i g(x)\] dx
   
   and
   
