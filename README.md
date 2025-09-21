@@ -8,9 +8,7 @@ Supports **1D** and **2D oscillatory integrals**, with both fixed and adaptive a
 ## Introduction
 
 - Efficient evaluation of integrals of the form  
-  $$
-    I = \int f(x) e^{i g(x)} dx
-  $$
+  ![equation](https://latex.codecogs.com/svg.latex?\int_{-\infty}^{\infty}e^{-x^2}dx=\sqrt{\pi})
   and  
   \[
     I = \iint f(x,y) e^{i g(x,y)} dx dy
