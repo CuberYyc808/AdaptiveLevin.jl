@@ -7,9 +7,12 @@ Supports **1D** and **2D oscillatory integrals**, with both fixed and adaptive a
 
 ## Introduction
 
-- Efficient evaluation of integrals of the form  
+- Efficient evaluation of integrals of the form
+  
   I = \int f(x) e^{i g(x)} dx
-  and 
+  
+  and
+  
   I = \iint f(x,y) exp\[i g(x,y)\] dx dy
 
 - Chebyshev collocation + truncated QR for solving the Levin ODE system.
