@@ -84,7 +84,7 @@ The results and time are
 0.04087258215148527 + 0.03989088975628127im, 9.716638 seconds # HCubature
 0.04087258215149002 + 0.03989088975628428im, 0.142308 seconds # adaptive-Levin
 ```
-If the phase function is separable, namely $`g(x,y) = g_x(x) + g_y(y)`$, we also accept input as `g = \[gx, gy\]`:
+If the phase function is separable, namely $`g(x,y) = g_x(x) + g_y(y)`$, we also accept input as `g = [gx, gy]`:
 ```julia
 gx(x) = ω * x^2
 gy(y) = ω * y^3
