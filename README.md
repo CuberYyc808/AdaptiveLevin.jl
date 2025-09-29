@@ -9,11 +9,11 @@ Supports **1D** and **2D oscillatory integrals**, with both fixed and adaptive a
 
 - Efficient evaluation of integrals of the form
   
-  $$I = \int f(x) \exp\[i g(x)\] dx$$
+  $$I = \int f(x) \ \exp\[i g(x)\] \ dx$$
   
   and
   
-  $$I = \iint f(x,y) \exp\[i g(x,y)\] dx dy$$
+  $$I = \iint f(x,y) \ \exp\[i g(x,y)\] \ dx dy$$
 
 - Chebyshev collocation + truncated QR for solving the Levin ODE system.
 - Adaptive subdivision to handle varying oscillation frequency.
