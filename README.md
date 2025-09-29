@@ -24,12 +24,11 @@ Supports **1D** and **2D oscillatory integrals**, with both fixed and adaptive a
 
 ## Installation
 
-Currently not registered in the General registry.  
-You can install from GitHub:
+You can install it directly by 
 
 ```julia
 using Pkg
-Pkg.add(url="git@github.com:CuberYyc808/AdaptiveLevin.jl.git")
+Pkg.add("AdaptiveLevin")
 ```
 ---
 
