@@ -17,7 +17,7 @@ Supports **1D** and **2D oscillatory integrals**, with both fixed and adaptive a
 
 - Chebyshev collocation + truncated QR for solving the Levin ODE system.
 - Adaptive subdivision to handle varying oscillation frequency.
-- Support for **separable phases** $ g(x,y) = g_x(x) + g_y(y) $.
+- Support for **separable phases** $` g(x,y) = g_x(x) + g_y(y) `$.
 - Clean Julia implementation, no dependencies beyond `LinearAlgebra`.
 
 ---
