@@ -9,27 +9,26 @@ Supports **1D** and **2D oscillatory integrals**, with both fixed and adaptive a
 
 - Efficient evaluation of integrals of the form
   
-  $$I = \int f(x) \  \exp\[i g(x)\] \ dx$$
+  $$I = \int f(x) \ \exp\[i g(x)\] \ dx$$
   
   and
   
-  $$I = \iint f(x,y) \ \exp\[i g(x,y)\] \  dx dy$$
+  $$I = \iint f(x,y) \ \exp\[i g(x,y)\] \ dx dy$$
 
 - Chebyshev collocation + truncated QR for solving the Levin ODE system.
 - Adaptive subdivision to handle varying oscillation frequency.
-- Support for **separable phases** $g(x,y) = g_x(x) + g_y(y)$.
+- Support for **separable phases** $` g(x,y) = g_x(x) + g_y(y) `$.
 - Clean Julia implementation, no dependencies beyond `LinearAlgebra`.
 
 ---
 
 ## Installation
 
-Currently not registered in the General registry.  
-You can install from GitHub:
+You can install it directly by 
 
 ```julia
 using Pkg
-Pkg.add(url="git@github.com:CuberYyc808/AdaptiveLevin.jl.git")
+Pkg.add("AdaptiveLevin")
 ```
 ---
 
@@ -56,8 +55,8 @@ The results and time are
 -0.00788183605964634 - 0.004051885499358002im, 0.002167 seconds # adaptive-Levin
 ```
 - For highly oscillatory integrals, Levin method is way better than traditional Gauss–Kronrod method.
-- If the phase function \(g(x)\) is uneven, adaptive Levin method can significantly improve efficiency compared with that without adaptivity.
-- Adaptivity can effectively avoid the pathological phenomena at stable points. For example, g'(-2)=0 in the above case.
+- If the phase function $`g(x)`$ is uneven, adaptive Levin method can significantly improve efficiency compared with that without adaptivity.
+- Adaptivity can effectively avoid the pathological phenomena at stable points. For example, $`g'(-2)=0`$ in the above case.
 - In low frequency cases, the adaptive Levin method is till fast and accurate. (Try ω=0.001 to see its performance.) 
 
 ### 2. Two-dimensional oscillatory integral
@@ -85,7 +84,7 @@ The results and time are
 0.04087258215148527 + 0.03989088975628127im, 9.716638 seconds # HCubature
 0.04087258215149002 + 0.03989088975628428im, 0.142308 seconds # adaptive-Levin
 ```
-If the phase function is separable, namely g(x,y) = gx(x) + gy(y), we also accept input as g = \[gx, gy\]:
+If the phase function is separable, namely $`g(x,y) = g_x(x) + g_y(y)`$, we also accept input as `g = [gx, gy]`:
 ```julia
 gx(x) = ω * x^2
 gy(y) = ω * y^3
